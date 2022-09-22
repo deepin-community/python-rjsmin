@@ -1,0 +1,76 @@
+python-rjsmin (1.1.0+dfsg1-3) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 21 Oct 2019 10:20:30 +0200
+
+python-rjsmin (1.1.0+dfsg1-2) experimental; urgency=medium
+
+  * Add build time testing, thanks to Steve Langasek and James Page
+    (Closes: #922077).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 09 Oct 2019 17:25:44 +0200
+
+python-rjsmin (1.1.0+dfsg1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Fixed (build-)depends for this release.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 24 Sep 2019 15:14:29 +0200
+
+python-rjsmin (1.0.12+dfsg1-5) unstable; urgency=medium
+
+  * Team upload.
+  [ Ondřej Nový ]
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
+  * Use pybuild to build package.
+  * Drop Python 2 support (Closes: #938146).
+  * Bump debhelper compat level to 12.
+  * Enable autopkgtest-pkg-python testsuite.
+  * d/copyright: Reorder.
+  * d/source.lintian-overrides -> d/source/lintian-overrides.
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+  * Updating standards version to 4.1.0.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Add trailing tilde to min version depend to allow
+    backports
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 02 Sep 2019 10:36:35 +0200
+
+python-rjsmin (1.0.12+dfsg1-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URLs (https).
+
+  [ Thomas Goirand ]
+  * Added debian/source.lintian-overrides.
+
+  [ Ondřej Nový ]
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
+  * Fix typo on long desc (Closes: #839685).
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 10 Mar 2016 10:43:35 +0100
+
+python-rjsmin (1.0.12+dfsg1-2) unstable; urgency=medium
+
+  * Added missing build-depends: openstack-pkg-tools (Closes: #808886).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 28 Dec 2015 09:11:00 +0000
+
+python-rjsmin (1.0.12+dfsg1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #808800)
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 22 Dec 2015 10:50:39 +0100

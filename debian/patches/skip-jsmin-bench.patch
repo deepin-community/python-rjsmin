@@ -1,0 +1,16 @@
+Description: Skip jsmin tests as dropped from source
+Author: James Page <james.page@ubuntu.com>
+Forwared: not-needed
+
+Index: python-rjsmin/bench/main.py
+===================================================================
+--- python-rjsmin.orig/bench/main.py
++++ python-rjsmin/bench/main.py
+@@ -44,7 +44,6 @@ import time as _time
+ 
+ import_notes = []
+ class jsmins(object):
+-    from bench import jsmin as p_01_simple_port
+     if _sys.version_info >= (2, 4):
+         from bench import jsmin_2_0_9 as p_02_jsmin_2_0_9
+     else:
